@@ -1,0 +1,159 @@
+* {
+  font-family: monospace;
+}
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+navbar > ul {
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  padding-left: 40px;
+}
+.navlinks > * {
+  margin-left: 20px;
+  margin: 30px;
+  font-size: x-large;
+}
+
+.main-text {
+  line-height: 300%;
+}
+.gdsc-heading {
+  color: red;
+  font-size: 100px;
+}
+.aws-heading {
+  color: rgb(153, 1, 196);
+  font-size: 100px;
+}
+.uni-logo {
+  margin: 20px;
+  background-color: blanchedalmond;
+  height: 60px;
+  padding: 10px;
+  box-shadow: 5px 5px;
+  width: min-content;
+  border-radius: 10px;
+  display: inline-block;
+}
+main {
+  display: flex;
+  margin: 6rem;
+  position: relative;
+}
+.lucknow-poster {
+  float: right;
+  margin-top: 40px;
+  width: 60vw;
+}
+
+/* Scroll Animation */
+.mouse {
+  position: absolute;
+  border: solid black;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollAnimation 1s infinite;
+}
+
+.scroll-icon {
+  display: block;
+  width: 20px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.scroll-icon::before {
+  content: "";
+  width: 4px;
+  height: 12px;
+  background-color: #333;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 2px;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+article {
+  display: flex;
+  padding-top: 150px;
+
+  margin: 4rem;
+}
+
+.about {
+  font-size: 23px;
+  width: 60rem;
+}
+.moto {
+  border: 1px solid black;
+  padding: 8px;
+  padding-inline: 20px;
+  border-radius: 20px;
+}
+.motos {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.join-us-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  border: 1px solid black;
+  margin: 30%;
+  /* border-radius: 20px; */
+  background-color: rgb(59 130 246);
+  padding: 10px;
+}
+
+.about-events {
+  width: 40rem;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: 120px 240px;
+  grid-template-rows: 100px 100px;
+  justify-content: space-between;
+}
+
+.about-event {
+  padding: 10px;
+  border-radius: 3px;
+}
+.join-us {
+  width: 100vw;
+}
