@@ -71,7 +71,7 @@ main {
   border: solid black;
   left: 50%;
   /* transform: translateX(-50%); */
-  margin-top: 10rem;
+  margin-top: 21rem;
   animation: scrollAnimation 1s infinite;
 }
 
@@ -119,7 +119,7 @@ article {
   align-items: center;
   padding-top: 150px;
   justify-content: center;
-  margin: 20rem 6rem 6rem 6rem;
+  margin: 25rem 6rem 6rem 6rem;
 }
 .intro-heading {
   font-size: 80px;
