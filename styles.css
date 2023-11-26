@@ -1,18 +1,31 @@
 * {
-  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
 }
 
 navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 15px;
 }
-
+logo {
+  padding-left: 6rem;
+}
 navbar > ul {
   display: flex;
   margin-right: 20px;
+  padding-right: 6rem;
   justify-content: space-between;
   list-style-type: none;
+}
+.navlinks > * {
+  color: rgb(91, 91, 91);
+  margin-left: 20px;
+  margin: 30px;
+  /* font-weight: bold; */
+  font-size: large;
 }
 section {
   display: flex;
@@ -21,42 +34,35 @@ section {
   width: 40vw;
   padding-left: 40px;
 }
-.navlinks > * {
-  margin-left: 20px;
-  margin: 30px;
-  font-size: x-large;
-}
 
 .main-text {
   line-height: 300%;
 }
-.gdsc-heading {
-  color: red;
-  font-size: 100px;
-}
+
 .aws-heading {
-  color: rgb(153, 1, 196);
+  color: #6237a0;
   font-size: 100px;
 }
 .uni-logo {
-  margin: 20px;
+  margin-top: 20px;
   background-color: blanchedalmond;
-  height: 60px;
+  height: 80px;
   padding: 10px;
   box-shadow: 5px 5px;
   width: min-content;
   border-radius: 10px;
   display: inline-block;
 }
+
 main {
-  display: flex;
+  /* display: flex; */
   margin: 6rem;
   position: relative;
 }
 .lucknow-poster {
-  float: right;
-  margin-top: 40px;
-  width: 60vw;
+  position: absolute;
+  z-index: -1;
+  top: 10px;
 }
 
 /* Scroll Animation */
@@ -64,7 +70,8 @@ main {
   position: absolute;
   border: solid black;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
+  margin-top: 10rem;
   animation: scrollAnimation 1s infinite;
 }
 
@@ -108,52 +115,221 @@ main {
 
 article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 150px;
-
-  margin: 4rem;
+  justify-content: center;
+  margin: 20rem 6rem 6rem 6rem;
 }
-
+.intro-heading {
+  font-size: 80px;
+}
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 25%; */
   font-size: 23px;
   width: 60rem;
+}
+.about > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+.motos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 .moto {
   border: 1px solid black;
   padding: 8px;
+  display: flex;
   padding-inline: 20px;
   border-radius: 20px;
 }
-.motos {
-  width: 80%;
+
+.gdsc-heading {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  /* margin-top: 6rem; */
+}
+.section-gdsc {
+  display: flex;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+.about-gdsc * {
+  margin-bottom: 20px;
+  width: 40rem;
+}
+.events-gdsc {
+  width: 40rem;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px 100px;
+  justify-content: space-between;
+  font-size: medium;
 }
 
+.event {
+  padding: 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: max-content;
+}
+.gdsc-button {
+  background-color: rgb(59 130 246);
+}
+
+.aws-button {
+  background-color: #7c5aed;
+}
+.join-us {
+  margin-top: 40px;
+}
 .join-us-button {
   text-decoration: none;
   color: white;
   font-weight: bolder;
   border: 1px solid black;
-  margin: 30%;
-  /* border-radius: 20px; */
-  background-color: rgb(59 130 246);
+
   padding: 10px;
 }
 
-.about-events {
-  width: 40rem;
+.gdsc {
+  margin: 4rem 4rem 0 4rem;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 60px;
+}
+.aws-logo {
+  display: flex;
+
+  justify-content: center;
+}
+
+.aws-logo > img {
+  border-radius: 20px;
+  height: 16rem;
+}
+.aws {
+  /* margin: ; */
+
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 60px;
+  margin: 6rem;
+  width: fit-content;
+}
+.aws-section {
+  justify-content: center;
+}
+.aws-events {
+  padding-left: 5rem;
+}
+/*  */
+
+.heading {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.gdsc-letter {
+  display: inline-block;
+  font-size: 100px;
+
+  font-weight: bold;
+  /* margin: 0 5px;   */
+}
+
+.g-color {
+  color: #4285f4;
+}
+
+.d-color {
+  color: #db4437;
+}
+
+.s-color {
+  color: #f4b400;
+}
+
+.c-color {
+  color: #0f9d58;
+}
+
+.collab {
+  font-size: 60px;
+  margin-inline: 20px;
+  font-weight: bold;
+}
+.g-color {
+  color: #4285f4;
+}
+
+.o1-color {
+  color: #db4437;
+}
+
+.o2-color {
+  color: #f4b400;
+}
+
+.g2-color {
+  color: #4285f4;
+}
+
+.l-color {
+  color: #0f9d58;
+}
+
+.e-color {
+  color: #db4437;
+}
+.mentors-heading {
+  margin-top: 14rem;
+  font-size: 60px;
+}
+.mentor {
+  margin-top: 2rem;
+  border: 1px solid black;
+  height: 16rem;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mentors {
   display: grid;
-  row-gap: 5px;
-  column-gap: 5px;
-  grid-template-columns: 120px 240px;
-  grid-template-rows: 100px 100px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+.socials-heading {
+  margin-top: 6rem;
+  font-size: 80px;
+}
+.social-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.social-links {
+  margin-top: 4rem;
+  display: flex;
+  width: 80vw;
   justify-content: space-between;
 }
+.social {
+  font-size: 25px;
+  border: 1px solid black;
 
-.about-event {
-  padding: 10px;
-  border-radius: 3px;
-}
-.join-us {
-  width: 100vw;
+  padding: 30px 20px;
+  border-radius: 50px;
 }
