@@ -330,7 +330,10 @@ article {
 .social {
   font-size: 25px;
   border: 1px solid black;
-
   padding: 30px 20px;
   border-radius: 50px;
+  cursor: pointer;
+}
+.social i{
+  margin-right: 7px;
 }
