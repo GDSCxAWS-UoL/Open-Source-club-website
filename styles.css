@@ -62,7 +62,8 @@ main {
 .lucknow-poster {
   position: absolute;
   z-index: -1;
-  top: 10px;
+  top: 50px;
+  max-width: 95vw;
 }
 
 /* Scroll Animation */
