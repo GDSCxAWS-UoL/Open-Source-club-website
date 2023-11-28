@@ -328,9 +328,30 @@ article {
   justify-content: space-between;
 }
 .social {
-  font-size: 25px;
-  border: 1px solid black;
-
-  padding: 30px 20px;
-  border-radius: 50px;
+  font-size: 40px;
+  padding: 10px;
+}
+.social:hover {
+  cursor: pointer;
+}
+.social .instagram {
+  background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+.social .twitter {
+  color: #0a66c2;
+}
+.social .linkedln {
+  color: #0a66c2;
+}
+.social .github {
+  color: #0f0f0f;
+}
+.social .whatsapp {
+  color: #32cd32;
+}
+.social .youtube {
+  color: #ff0000;
 }
